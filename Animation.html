@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style type="text/css">
+        #D{width: 20%;height: 250px;background-color: yellowgreen;
+            animation-name: demo;
+            animation-duration: 5s;
+            animation-iteration-count: 1;/*infinite*/
+            animation-fill-mode: forwards;
+            position: relative;
+            border-radius: 100%;
+        }
+        @keyframes demo
+        {
+            0%{background-color: red;top: 0px;Left: 0PX;}
+            25%{background-color: yellow;top: 300px;right: 300px;border-radius: 50%;}
+            50%{background-color: blue;transform: rotate(350deg)}
+            75%{background-color: violet;bottom: 300px;left: 300px;animation-fill-mode: forwards;}
+            100%{background-color: violet;bottom: 0px;left: 0px;animation-fill-mode: forwards;}
+            
+        }
+    </style>    
+</head>
+<body>
+    <div id="D"></div>
+</body>
+</html>
